@@ -1,0 +1,40 @@
+name: Mason
+type: theme
+description: "Base theme inspired by Starbase & Basic utilizing Stylus CSS"
+core_version_requirement: ^9 || ^10
+base theme: false
+
+regions:
+  branding                          : "Branding"
+  navigation                        : "Navigation"
+  hero                              : "Hero"
+  highlight                         : "Highlight"
+  content                           : "Content"
+  sidebar                           : "Sidebar"
+  footer                            : "Footer"
+  buffer                            : "Buffer"
+
+components:
+  namespaces:
+
+    # assets
+    # img                             : assets/img
+    css                             : assets/css
+    js                              : assets/js
+
+    # system: structure
+    core                            : sources/00-core
+    atoms                           : sources/01-atoms/_components
+    molecules                       : sources/02-molecules/_components
+    organisms                       : sources/03-organisms/_components
+    symbiosis                       : sources/04-symbiosis/_components
+    synergy                         : sources/05-synergy/_components
+
+libraries:
+  - mason/global-styling
+
+dependencies:
+  - body_roles_classes:body_roles_classes
+  - browscap:browscap
+  - components:components
+  - mgv:mgv

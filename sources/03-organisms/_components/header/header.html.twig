@@ -1,0 +1,28 @@
+{% block site_header %}
+  <header>
+    <div class="site-header__inner fix-width full-width">
+
+      {# page.branding #}
+      {% if page.branding %}
+          <div class="site-header__brand-wrapper">
+            {{ page.branding }}
+          </div>
+      {% endif %}
+
+      {# page.navigation #}
+      {% if page.navigation %}
+          <div class="site-header__nav-wrapper">
+            {% include '@organisms/navigation/navigation--main.html.twig' %}
+          </div>
+      {% endif %}
+
+      {# page.header #}
+      {% if page.header %}
+          <div class="site-header__header-wrapper">
+            {{ page.header }}
+          </div>
+      {% endif %}
+
+    </div>
+  </header>
+{% endblock site_header %}

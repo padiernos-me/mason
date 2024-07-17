@@ -1,0 +1,40 @@
+{
+  "name": "stone",
+  "version": "0.1.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "cssnano": "^5.0.8",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-stylus": "^2.7.0",
+    "gulp-terser-js": "^5.2.2",
+    "gulp-uglify": "^3.0.2",
+    "koffie": "^1.1.4",
+    "kouto-swiss": "^1.1.0",
+    "lazypipe": "^1.0.2",
+    "nib": "^1.2.0",
+    "postcss": "^8.3.8",
+    "postcss-colorblind": "^1.0.0",
+    "postcss-svgo": "^5.0.2",
+    "rfs": "^9.0.6",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-stylus": "^0.18.0",
+    "stylus": "^0.55.0",
+    "typesettings": "^4.2.0"
+  },
+  "dependencies": {
+    "phosphor-css": "^3.1.0"
+  }
+}

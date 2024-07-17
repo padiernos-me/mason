@@ -1,0 +1,14 @@
+{% extends '@symbiosis/page/page.html.twig' %}
+
+{% block banner %}{% endblock banner %}
+
+{% block main %}
+  <main role="main" class="site-main">
+    <a id="main-content" tabindex="-1" class="visually-hidden"></a>
+    
+      {% include '@organisms/main/main--user--login.html.twig' %}
+    
+  </main>
+{% endblock main %}
+
+{% block footer %}{% endblock footer %}
