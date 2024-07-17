@@ -1,0 +1,9 @@
+<section id="site-content" class="site-content wrapper">
+
+  {{ page.content }}
+
+  {% if page.sidebar %}
+    {% include '@organisms/sidebar/sidebar.html.twig' %}
+  {% endif %}
+
+</section>

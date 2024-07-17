@@ -1,0 +1,9 @@
+{% extends '@molecules/title/title.html.twig' %}
+
+{% block title %}
+  {% if label %}
+    <h2{{ title_attributes }}>
+      {% include '@atoms/label/label.html.twig' %}
+    </h2>
+  {% endif %}
+{% endblock %}
