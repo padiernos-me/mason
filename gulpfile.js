@@ -49,8 +49,8 @@ function scripts() {
 }
 
 task('watch', () => {
-  watch('**/mason.source.styl', styles)
-  watch('**/mason.source.js', scripts)
+  watch('**/*.styl', styles)
+  watch('**/*.js', scripts)
 });
 
 task('default', series(styles, scripts, ['watch']));

@@ -1,11 +1,11 @@
 {% block site_header %}
-  <header>
+  <header class="site-header header">
     <div class="site-header__inner fix-width full-width">
 
       {# page.branding #}
       {% if page.branding %}
           <div class="site-header__brand-wrapper">
-            {{ page.branding }}
+            {% include '@organisms/branding/branding.html.twig' %}
           </div>
       {% endif %}
 
@@ -17,9 +17,9 @@
       {% endif %}
 
       {# page.header #}
-      {% if page.header %}
-          <div class="site-header__header-wrapper">
-            {{ page.header }}
+      {% if page.focus %}
+          <div class="site-header__focus-wrapper">
+            {% include '@organisms/focus/focus.html.twig' %}
           </div>
       {% endif %}
 

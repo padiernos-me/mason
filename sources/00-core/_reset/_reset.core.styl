@@ -34,8 +34,13 @@ body
 // Remove list styles (bullets/numbers)
 // ol, ul, menu, summary
 ol, ul
-  &[role='list']
+  &.menu,
+  &.summary
     list-style none
+
+  &[role='list'],
+  &.links
+    padding-left 1em
 
 // A elements that don't have a class get default styles
 a:not([class])
