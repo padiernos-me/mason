@@ -34,19 +34,23 @@
  */
 #}
 {% set classes = [
-  'flex',
-  'flex-row'
+  'links'
 ] %}
 
 {% if links -%}
+
   {%- if heading -%}
+
     {%- if heading.level -%}
       <{{ heading.level }}{{ heading.attributes }}>{{ heading.text }}</{{ heading.level }}>
     {%- else -%}
       <h2{{ heading.attributes }}>{{ heading.text }}</h2>
     {%- endif -%}
+
   {%- endif -%}
+
   <ul{{ attributes.addClass(classes) }}>
+
     {%- for item in links -%}
       <li{{ item.attributes }}>
         {%- if item.link -%}
@@ -58,5 +62,7 @@
         {%- endif -%}
       </li>
     {%- endfor -%}
+
   </ul>
+
 {%- endif %}

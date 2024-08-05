@@ -1,17 +1,17 @@
-{% if page.highlight %}
-  {% block highlight %}
+{% block highlight %}
+  {% if page.highlight %}
     {% include '@organisms/highlight/highlight.html.twig' %}
-  {% endblock highlight %}
-{% endif %}
+  {% endif %}
+{% endblock highlight %}
 
-{% if page.hero %}
-  {% block hero %}
+{% block hero %}
+  {% if page.hero %}
     {% include '@organisms/hero/hero.html.twig' %}
-  {% endblock hero %}
-{% endif %}
+  {% endif %}
+{% endblock hero %}
 
-{% if page.content %}
-  {% block content %}
+{% block content %}
+  {% if page.content %}
     {% include '@organisms/content/content.html.twig' %}
-  {% endblock %}
-{% endif %}
+  {% endif %}
+{% endblock content %}
