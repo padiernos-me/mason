@@ -1,58 +1,67 @@
 body
-    &.toolbar-horizontal
-        #off-canvas
-            height calc(100% - 4em)
-            min-height calc(100% - 4em)
-
+  &.toolbar-horizontal
     #off-canvas
+      height calc(100% - 4em)
+      min-height calc(100% - 4em)
+
+  #off-canvas
+    *
+      font-family font-stack__base
+
+      h1, h2, h3, h4, h5, h6
+        font-family font-stack__slab
+        font-weight 700
+        margin inherit
+
+      h6
+        font-size font-001
+
+      h5
+        font-size font-002
+
+      h4
+        font-size font-003
+
+      h3
+        font-size font-004
+
+      h2
+        font-size font-005
+
+      h1
+        font-size font-006
+
         *
-            font-family font-stack__base
+          font-size inherit
 
-            h1, h2, h3, h4, h5, h6
-                font-family font-stack__slab
-                font-weight 700
-                margin inherit
-
-            h6
-                font-size font-001
-            h5
-                font-size font-002
-            h4
-                font-size font-003
-            h3
-                font-size font-004
-            h2
-                font-size font-005
-            h1
-                font-size font-006
-
-                *
-                    font-size inherit
-
-        height 100%
-        min-height 100%
-        grid-template-rows auto 1fr auto
+    height 100%
+    min-height 100%
+    grid-template-rows auto 1fr auto
 
 .flex
-    display flex
+  display flex
 
-    &-row
-        flex-direction row
+  &-row
+    flex-direction row
 
 .grid
-    display grid
+  display grid
 
 main
+  > *
+    max-width calc(100% - 2.5em)
+    margin-inline auto
+
+  figure.hero
+    max-width 100%
+
     > *
-        max-width calc(100% - 2.5em)
-        margin-inline auto
+      max-width calc(100% - 2.5em)
+      margin-inline auto
 
-    figure.hero
-        max-width 100%
+  section.content
+    padding-block 1em
 
-        > *
-            max-width calc(100% - 2.5em)
-            margin-inline auto
-
-    section.content
-        padding-block 1em
+footer
+  > * div
+    padding 1.25em
