@@ -38,6 +38,27 @@ body
     min-height 100%
     grid-template-rows auto 1fr auto
 
+main
+  > *
+    max-width calc(100% - 2.5em)
+    margin-inline auto
+
+  figure
+    &.hero
+      max-width 100%
+
+    > *
+      max-width calc(100% - 2.5em)
+      margin-inline auto
+
+  section
+    &.content
+      padding-block 1.25em
+
+footer
+  > * div
+    padding 1.25em
+
 .flex
   display flex
 
@@ -47,21 +68,5 @@ body
 .grid
   display grid
 
-main
-  > *
-    max-width calc(100% - 2.5em)
-    margin-inline auto
-
-  figure.hero
-    max-width 100%
-
-    > *
-      max-width calc(100% - 2.5em)
-      margin-inline auto
-
-  section.content
-    padding-block 1em
-
-footer
-  > * div
-    padding 1.25em
+.no-bullets
+  list-style none
