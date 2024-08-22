@@ -1,6 +1,13 @@
-.button
-  background-color dark
-  border solid 4px dark
-  color accent
-  display flex
-  place-items center
+button,
+.button,
+    &.button
+      background-color bg-color
+      border solid 4px bg-color
+      color white
+      display flex
+      place-items center
+      cursor pointer
+
+        &:hover,
+        &:focus
+            background-color lighten(bg-color, 25%)

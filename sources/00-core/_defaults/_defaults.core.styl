@@ -7,11 +7,12 @@ body
   #off-canvas
     *
       font-family font-stack__base
+      min-width 0
 
       h1, h2, h3, h4, h5, h6
         font-family font-stack__slab
         font-weight 700
-        margin inherit
+        margin initial
 
       h6
         font-size font-001
@@ -40,7 +41,7 @@ body
 
 main
   > *
-    max-width calc(100% - 2.5em)
+    max-width calc(100% - 3rem)
     margin-inline auto
 
   figure

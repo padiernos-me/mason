@@ -1,0 +1,16 @@
+{% extends '@symbiosis/page/page.html.twig' %}
+
+{% block banner %}
+  {% include '@synergy/page__user/page__user__header/page--user--header.html.twig' %}
+{% endblock banner %}
+
+{% block main %}
+  <main role="main" class="site-main page--user--login">
+    <a id="main-content" tabindex="-1" class="visually-hidden"></a>
+    {% include '@synergy/page__user/page__user__main/page--user--main.html.twig' %}
+  </main>
+{% endblock main %}
+
+{% block footer %}
+  {% include '@synergy/page__user/page__user__footer/page--user--footer.html.twig' %}
+{% endblock footer %}

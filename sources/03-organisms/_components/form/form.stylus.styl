@@ -1,0 +1,19 @@
+form
+    max-width 100%
+    display grid
+    grid-gap gap
+
+    *
+        font-size inherit
+
+        input
+            padding .75rem .55rem
+
+    .form-actions
+        container-type inline-size
+        display flex
+
+        @container (width < 50ch)
+            input
+                flex auto
+                text-align center
